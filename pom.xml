@@ -1,0 +1,108 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	
+	<modelVersion>4.0.0</modelVersion>
+	
+	<groupId>org.iglooproject</groupId>
+	<artifactId>igloo-shades</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<packaging>pom</packaging>
+
+	<modules>
+		<module>hibernate-annotations</module>
+		<module>hibernate-search-annotations</module>
+		<module>igloo-component-jpa-model</module>
+		<module>igloo-component-jpa-more-model</module>
+		<module>igloo-component-jpa-security-model</module>
+		<module>java-object-diff-annotations</module>
+		<module>spring-annotations</module>
+		<module>spring-security-acl</module>
+		<module>spring-stringutils</module>
+	</modules>
+	
+	<name>Igloo - Shades</name>
+	
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+	</properties>
+	
+	<build>
+		<pluginManagement>
+			<plugins>
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-shade-plugin</artifactId>
+					<version>3.2.1</version>
+				</plugin>
+			</plugins>
+		</pluginManagement>
+	</build>
+	
+	<!-- Project information -->
+
+	<organization>
+		<name>Kobalt</name>
+		<url>https://www.kobalt.fr/</url>
+	</organization>
+
+	<licenses>
+		<license>
+			<name>The Apache Software License, Version 2.0</name>
+			<url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+			<distribution>repo</distribution>
+		</license>
+	</licenses>
+
+	<distributionManagement>
+		<site>
+			<id>igloo</id>
+			<name>Igloo site</name>
+			<url>https://igloo-doc.readthedocs.org/</url>
+		</site>
+		<repository>
+			<id>nexus-igloo-releases</id>
+			<name>Nexus Igloo Releases</name>
+			<url>https://nexus.tools.kobalt.fr/repository/igloo-releases/</url>
+		</repository>
+		<snapshotRepository>
+			<id>nexus-igloo-snapshots</id>
+			<name>Nexus Igloo Snapshots</name>
+			<url>https://nexus.tools.kobalt.fr/repository/igloo-snapshots/</url>
+		</snapshotRepository>
+	</distributionManagement>
+
+	<issueManagement>
+		<system>GitHub</system>
+		<url>https://github.com/igloo-project/igloo-shades/issues</url>
+	</issueManagement>
+
+	<scm>
+		<developerConnection>scm:git:git@github.com:igloo-project/igloo-shades.git</developerConnection>
+		<url>https://github.com/igloo-project/igloo-shades</url>
+		<tag>HEAD</tag>
+	</scm>
+
+	<repositories>
+		<repository>
+			<id>nexus-igloo-releases</id>
+			<name>Nexus Igloo Releases</name>
+			<url>https://nexus.tools.kobalt.fr/repository/igloo-releases/</url>
+			<snapshots>
+				<enabled>false</enabled>
+			</snapshots>
+		</repository>
+		
+		<repository>
+			<id>nexus-igloo-snapshots</id>
+			<name>Nexus Igloo Snapshots</name>
+			<url>https://nexus.tools.kobalt.fr/repository/igloo-snapshots/</url>
+			<snapshots>
+				<enabled>true</enabled>
+			</snapshots>
+			<releases>
+				<enabled>false</enabled>
+			</releases>
+		</repository>
+	</repositories>
+	
+</project>
