@@ -10,7 +10,6 @@
 
 	<groupId>org.iglooproject.shades</groupId>
 	<artifactId>igloo-component-jpa-security-model</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
 
 	<dependencies>
 		<dependency>
@@ -32,7 +31,6 @@
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-shade-plugin</artifactId>
-				<version>3.2.1</version>
 				<configuration>
 					<artifactSet>
 						<includes>org.iglooproject.components:igloo-component-jpa-security</includes>
@@ -42,42 +40,15 @@
 							<artifact>*:igloo-component-jpa-security</artifact>
 							<includes>
 								<include>org/iglooproject/jpa/security/business/person/model/**</include>
+								<include>org/iglooproject/jpa/security/business/authority/model/**</include>
+								<include>org/iglooproject/jpa/security/business/authority/util/*</include>
+								<include>org/iglooproject/jpa/security/password/rule/*</include>
+								<include>org/iglooproject/jpa/security/model/*</include>
 							</includes>
 						</filter>
 					</filters>
 				</configuration>
-				<executions>
-					<execution>
-						<phase>package</phase>
-						<goals>
-							<goal>shade</goal>
-						</goals>
-					</execution>
-				</executions>
 			</plugin>
 		</plugins>
 	</build>
-
-	<repositories>
-		<repository>
-			<id>nexus-igloo-releases</id>
-			<name>Nexus Igloo Releases</name>
-			<url>https://nexus.tools.kobalt.fr/repository/igloo-releases/</url>
-			<snapshots>
-				<enabled>false</enabled>
-			</snapshots>
-		</repository>
-
-		<repository>
-			<id>nexus-igloo-snapshots</id>
-			<name>Nexus Igloo Snapshots</name>
-			<url>https://nexus.tools.kobalt.fr/repository/igloo-snapshots/</url>
-			<snapshots>
-				<enabled>true</enabled>
-			</snapshots>
-			<releases>
-				<enabled>false</enabled>
-			</releases>
-		</repository>
-	</repositories>
 </project>

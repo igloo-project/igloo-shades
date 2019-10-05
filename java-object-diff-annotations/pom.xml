@@ -10,7 +10,6 @@
 
 	<groupId>org.iglooproject.shades</groupId>
 	<artifactId>java-object-diff-annotations</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
 
 	<dependencies>
 		<dependency>
@@ -32,7 +31,6 @@
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-shade-plugin</artifactId>
-				<version>3.2.1</version>
 				<configuration>
 					<artifactSet>
 						<includes>de.danielbechler:java-object-diff</includes>
@@ -46,14 +44,6 @@
 						</filter>
 					</filters>
 				</configuration>
-				<executions>
-					<execution>
-						<phase>package</phase>
-						<goals>
-							<goal>shade</goal>
-						</goals>
-					</execution>
-				</executions>
 			</plugin>
 		</plugins>
 	</build>
