@@ -23,6 +23,17 @@
 				</exclusion>
 			</exclusions>
 		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-beans</artifactId>
+			<optional>true</optional>
+			<exclusions>
+				<exclusion>
+					<groupId>*</groupId>
+					<artifactId>*</artifactId>
+				</exclusion>
+			</exclusions>
+		</dependency>
 	</dependencies>
 
 	<build>
@@ -33,12 +44,19 @@
 				<configuration>
 					<artifactSet>
 						<includes>org.springframework:spring-context</includes>
+						<includes>org.springframework:spring-beans</includes>
 					</artifactSet>
 					<filters>
 						<filter>
 							<artifact>*:spring-context</artifact>
 							<includes>
 								<include>org/springframework/stereotype/**</include>
+							</includes>
+						</filter>
+						<filter>
+							<artifact>*:spring-beans</artifact>
+							<includes>
+								<include>org/springframework/beans/factory/annotation/**</include>
 							</includes>
 						</filter>
 					</filters>
