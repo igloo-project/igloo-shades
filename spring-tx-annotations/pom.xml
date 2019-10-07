@@ -9,13 +9,12 @@
 	</parent>
 
 	<groupId>org.iglooproject.shades</groupId>
-	<artifactId>igloo-component-jpa-more-model</artifactId>
+	<artifactId>spring-tx-annotations</artifactId>
 
 	<dependencies>
 		<dependency>
-			<groupId>org.iglooproject.components</groupId>
-			<artifactId>igloo-component-jpa-more</artifactId>
-			<version>1.4-SNAPSHOT</version>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-tx</artifactId>
 			<optional>true</optional>
 			<exclusions>
 				<exclusion>
@@ -23,11 +22,6 @@
 					<artifactId>*</artifactId>
 				</exclusion>
 			</exclusions>
-		</dependency>
-		<dependency>
-			<groupId>org.iglooproject.shades</groupId>
-			<artifactId>igloo-component-jpa-model</artifactId>
-			<version>1.4-SNAPSHOT</version>
 		</dependency>
 	</dependencies>
 
@@ -38,16 +32,13 @@
 				<artifactId>maven-shade-plugin</artifactId>
 				<configuration>
 					<artifactSet>
-						<includes>org.iglooproject.components:igloo-component-jpa-more</includes>
+						<includes>org.springframework:spring-tx</includes>
 					</artifactSet>
 					<filters>
 						<filter>
-							<artifact>*:igloo-component-jpa-more</artifact>
+							<artifact>*:spring-tx</artifact>
 							<includes>
-								<include>org/iglooproject/jpa/more/business/*/model/**</include>
-								<include>org/iglooproject/jpa/more/business/*/util/**</include>
-								<include>org/iglooproject/jpa/more/business/history/hibernate/*</include>
-								<include>org/iglooproject/jpa/more/business/localization/util/*</include>
+								<include>org/springframework/transaction/annotation/**</include>
 							</includes>
 						</filter>
 					</filters>
