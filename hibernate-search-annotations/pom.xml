@@ -5,7 +5,7 @@
 	<parent>
 		<groupId>org.iglooproject</groupId>
 		<artifactId>igloo-shades</artifactId>
-		<version>0.0.1-SNAPSHOT</version>
+		<version>1.4-SNAPSHOT</version>
 	</parent>
 
 	<groupId>org.iglooproject.shades</groupId>
@@ -15,7 +15,7 @@
 		<dependency>
 			<groupId>org.hibernate</groupId>
 			<artifactId>hibernate-search-engine</artifactId>
-			<version>5.11.1.Final</version>
+			<version>${igloo.hibernate-search.version}</version>
 			<optional>true</optional>
 			<exclusions>
 				<exclusion>

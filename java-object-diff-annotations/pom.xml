@@ -5,7 +5,7 @@
 	<parent>
 		<groupId>org.iglooproject</groupId>
 		<artifactId>igloo-shades</artifactId>
-		<version>0.0.1-SNAPSHOT</version>
+		<version>1.4-SNAPSHOT</version>
 	</parent>
 
 	<groupId>org.iglooproject.shades</groupId>
@@ -15,7 +15,6 @@
 		<dependency>
 			<groupId>de.danielbechler</groupId>
 			<artifactId>java-object-diff</artifactId>
-			<version>0.95</version>
 			<optional>true</optional>
 			<exclusions>
 				<exclusion>
