@@ -43,8 +43,10 @@
 				<artifactId>maven-shade-plugin</artifactId>
 				<configuration>
 					<artifactSet>
-						<includes>org.springframework:spring-context</includes>
-						<includes>org.springframework:spring-beans</includes>
+						<includes>
+							<include>org.springframework:spring-context</include>
+							<include>org.springframework:spring-beans</include>
+						</includes>
 					</artifactSet>
 					<filters>
 						<filter>
