@@ -20,6 +20,7 @@
 		<module>igloo-component-jpa-security-model</module>
 		<module>java-object-diff-annotations</module>
 		<module>spring-annotations</module>
+		<module>spring-tx-annotations</module>
 		<module>spring-security-acl</module>
 		<module>spring-stringutils</module>
 	</modules>
