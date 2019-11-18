@@ -5,11 +5,12 @@
 	<parent>
 		<groupId>org.iglooproject.parents</groupId>
 		<artifactId>igloo-parent-maven-configuration-core</artifactId>
-		<version>1.4-docfactory-SNAPSHOT</version>
+		<version>1.4-docfactory-rc1</version>
 	</parent>
 	
 	<groupId>org.iglooproject</groupId>
 	<artifactId>igloo-shades</artifactId>
+	<version>1.4-docfactory-rc1</version>
 	<packaging>pom</packaging>
 
 	<modules>
@@ -47,6 +48,9 @@
 							</goals>
 						</execution>
 					</executions>
+					<configuration>
+						<createSourcesJar>true</createSourcesJar>
+					</configuration>
 				</plugin>
 			</plugins>
 		</pluginManagement>
