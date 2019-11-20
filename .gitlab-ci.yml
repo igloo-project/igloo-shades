@@ -1,0 +1,24 @@
+variables:
+  MAVEN_OPTS: "-Xmx1536m"
+
+stages:
+  - build
+  - deploy
+
+maven-build:
+  stage: build
+  environment: staging
+  script:
+    - "mvn -DskipTests clean package"
+
+maven-deploy:
+  stage: deploy
+  environment: staging
+  script:
+    - "mvn deploy -DskipTests -DperformRelease"
+  only:
+    - /^master$/
+    - /^dev$/
+    - /^ft-.*-deploy$/
+    - /^rl-.*$/
+    - /^hf-.*$/
