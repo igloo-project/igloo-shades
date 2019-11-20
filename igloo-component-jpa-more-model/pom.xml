@@ -15,7 +15,7 @@
 		<dependency>
 			<groupId>org.iglooproject.components</groupId>
 			<artifactId>igloo-component-jpa-more</artifactId>
-			<version>1.4-docfactory-SNAPSHOT</version>
+			<version>${igloo.version}</version>
 			<optional>true</optional>
 			<exclusions>
 				<exclusion>

@@ -31,6 +31,7 @@
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+		<igloo.version>1.4-docfactory-rc1</igloo.version>
 	</properties>
 	
 	<build>
