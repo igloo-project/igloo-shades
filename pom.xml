@@ -10,7 +10,7 @@
 	
 	<groupId>org.iglooproject</groupId>
 	<artifactId>igloo-shades</artifactId>
-	<version>1.4-docfactory-SNAPSHOT</version>
+	<version>1.4-docfactory-rc1</version>
 	<packaging>pom</packaging>
 
 	<modules>
