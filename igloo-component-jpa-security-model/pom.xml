@@ -4,7 +4,7 @@
 	<parent>
 		<groupId>org.iglooproject</groupId>
 		<artifactId>igloo-shades</artifactId>
-		<version>1.5.1</version>
+		<version>1.5.2</version>
 	</parent>
 
 	<groupId>org.iglooproject.shades</groupId>
@@ -26,7 +26,7 @@
 		<dependency>
 			<groupId>org.iglooproject.shades</groupId>
 			<artifactId>igloo-component-jpa-more-model</artifactId>
-			<version>1.5.1</version>
+			<version>1.5.2</version>
 		</dependency>
 	</dependencies>
 
