@@ -17,3 +17,4 @@ maven-deploy:
     - "mvn deploy -DskipTests -DperformRelease"
   only:
     - /^master$/
+    - /^dev$/
