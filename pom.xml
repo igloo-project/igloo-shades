@@ -5,12 +5,12 @@
 	<parent>
 		<groupId>org.iglooproject.parents</groupId>
 		<artifactId>igloo-parent-maven-configuration-core</artifactId>
-		<version>1.5.1</version>
+		<version>2.2.0-java11-SNAPSHOT</version>
 	</parent>
 	
 	<groupId>org.iglooproject</groupId>
 	<artifactId>igloo-shades</artifactId>
-	<version>1.5.1</version>
+	<version>2.2.0-java11-SNAPSHOT</version>
 	<packaging>pom</packaging>
 
 	<modules>
@@ -31,7 +31,7 @@
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-		<igloo.version>1.5.1</igloo.version>
+		<igloo.version>2.2.0-java11-SNAPSHOT</igloo.version>
 	</properties>
 	
 	<build>
