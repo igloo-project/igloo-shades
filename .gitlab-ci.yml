@@ -1,6 +1,8 @@
+image:
+  name: igloo-containers.tools.kobalt.fr/containers/maven-igloo:3.8-openjdk-11
+
 variables:
   MAVEN_OPTS: "-Xmx1536m"
-  JAVA_HOME: /usr/lib/jvm/java-11-openjdk
 
 stages:
   - build
@@ -10,6 +12,8 @@ maven-build:
   stage: build
   script:
     - "mvn -DskipTests clean package"
+  tags:
+    - docker
 
 maven-deploy:
   stage: deploy
@@ -17,4 +21,5 @@ maven-deploy:
     - "mvn deploy -DskipTests -DperformRelease"
   only:
     - /^master$/
-    - /^dev$/
+  tags:
+    - docker
