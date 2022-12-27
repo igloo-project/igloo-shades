@@ -1,6 +1,7 @@
-# igloo-shades
 
-**This projects is no longer used.**
+# DO NOT USE - This project is no longer used
+
+# igloo-shades
 
 Shaded jars for Igloo
 
