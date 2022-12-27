@@ -1,4 +1,7 @@
 # igloo-shades
+
+**This projects is no longer used.**
+
 Shaded jars for Igloo
 
 # How to update Igloo version
